@@ -1,6 +1,22 @@
 body {
 	margin: 0px;
 }
+.navbar {
+	color: #34495e;
+	height: 40px;
+	float: left;
+	margin-bottom: 8px;
+	width: 100%;
+}
+.navtitle{
+	margin: 0px;
+	float: left;
+}
+
+.navlinks {
+	margin-top: 9px;
+	float: right;
+}
 .contents {
 	max-width: 700px;
 	margin-left: auto;

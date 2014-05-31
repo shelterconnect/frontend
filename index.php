@@ -21,18 +21,20 @@
 <div id="sign-prof-overlay"><?php include('includes/sign-prof.php'); ?></div>
 
 
-<div class="navbar">
+
+
+<div class="contents">
+    
+    <div class="navbar">
     
     <?php require_once("includes/navbar.php") ?>
     
 </div>
-
-<div class="contents">
     
-<div id="map" style="height: 500px; width: 500px;"></div>
+<div id="map" style="height: 500px; width: 100%; margin-top: 50px;"></div>
 </div>
 
-<?php //include_once("includes/mapdisplay.php") ?>
+<?php include_once("includes/mapdisplay.php") ?>
   
 
 
