@@ -19,17 +19,11 @@
 </div>
 
 <div class="contents">
-    
-<div id="map" style="height: 500px; width: 500px;"></div>
-</div>
-
-<?php include_once("includes/mapdisplay.php") ?>
-  
-
-
-
-
-
+<?php
+	$pullid = $_GET['id'];
+	$pullurl = "includes/engine_info.php?id=" . $pullid;
+	require_once($pullurl);
+?>
 <body>
 </body>
 </html>
