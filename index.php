@@ -11,6 +11,9 @@
       href="includes/favicon_bread_trans.png">
 <LINK href="includes/main.css" rel="stylesheet" type="text/css">
 <title>Shelter Connect Home</title>
+<script src="includes/jquery-2.1.0.min.js"></script>
+<script src="includes/jquery-ui-1.10.4.min.js"></script>
+<script src="includes/jquery.ui.touch-punch.min.js"></script>
 </head>
 
 <div id="sign-in-overlay"><?php include('sign/sign-in.php'); ?></div>
