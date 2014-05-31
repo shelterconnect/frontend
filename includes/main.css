@@ -1,0 +1,99 @@
+<style>
+.navbar {
+	display: none;
+}
+.contents {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	font: 600 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 140%;
+}
+h1 {
+	color: #34495e;
+	font: 900 32px/40px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 32px;
+}
+h2 {
+	color: #34495e;
+	font: bold 23px/40px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contenttable {
+	width: 100%;
+}
+.contenttablerow1 {
+	display: inline-table;
+	width: 47%;
+	vertical-align: top;
+}
+.contenttablerow2 {
+	margin-left: 6%;
+	display: inline-table;
+	width: 47%;
+	vertical-align: top;
+}
+#features-list {
+	padding-left: 30px;
+}
+.btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #5dade2;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+  text-decoration: none;
+}
+.btn2 {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #2ecc71;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn2:hover {
+  background: #58d68d;
+  text-decoration: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+a {
+	text-decoration: none;
+}
+@media (-webkit-min-device-pixel-ratio: 2), /*  Firefox16, Chrome, Safari, iOS, Android */
+       (min--moz-device-pixel-ratio: 2),    /*  Older Firefox browsers (prior to Firefox16) */
+       (-o-min-device-pixel-ratio: 2/1),    /*  Opera */
+       (min-device-pixel-ratio: 2),         /*  not defined yet, http://www.w3.org/TR/css3-mediaqueries/ */
+       (min-resolution: 2dppx),             /*  not yet, probably in future, see http://www.w3.org/TR/css3-mediaqueries/ */
+       (min-resolution: 192dpi)             /*  works for non css3 browser */
+       {
+            .contenttablerow1 {
+				display: inline-table;
+				width: 100%;
+				vertical-align: top;
+			}
+			.contenttablerow2 {
+				margin-left: 0px;
+				display: inline-table;
+				width: 100%;
+				vertical-align: top;
+			}
+       }
+</style>
