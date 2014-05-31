@@ -16,23 +16,6 @@ h2 {
 	color: #34495e;
 	font: bold 23px/40px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-#contenttable {
-	width: 100%;
-}
-.contenttablerow1 {
-	display: inline-table;
-	width: 47%;
-	vertical-align: top;
-}
-.contenttablerow2 {
-	margin-left: 6%;
-	display: inline-table;
-	width: 47%;
-	vertical-align: top;
-}
-#features-list {
-	padding-left: 30px;
-}
 .btn {
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
