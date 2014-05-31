@@ -16,9 +16,9 @@
 <script src="includes/jquery.ui.touch-punch.min.js"></script>
 </head>
 
-<div id="sign-in-overlay"><?php include('sign/sign-in.php'); ?></div>
-<div id="sign-reg-overlay"><?php include('sign/sign-reg.php'); ?></div>
-<div id="sign-prof-overlay"><?php include('sign/sign-prof.php'); ?></div>
+<div id="sign-in-overlay"><?php include('includes/sign-in.php'); ?></div>
+<div id="sign-reg-overlay"><?php include('includes/sign-reg.php'); ?></div>
+<div id="sign-prof-overlay"><?php include('includes/sign-prof.php'); ?></div>
 
 
 <div class="navbar">
@@ -32,7 +32,7 @@
 <div id="map" style="height: 500px; width: 500px;"></div>
 </div>
 
-<?php include_once("includes/mapdisplay.php") ?>
+<?php //include_once("includes/mapdisplay.php") ?>
   
 
 
