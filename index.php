@@ -36,7 +36,25 @@
   
 
 
+<script>
+function signInOverlay(){
+	$('#sign-in-overlay').fadeIn('slow', function(){
+		});
+}
+function closeInOverlay(){
+	$('#sign-in-overlay').fadeOut('slow', function(){
+		});
+}
+function signRegOverlay(){
+	$('#sign-reg-overlay').fadeIn('slow', function(){
+		});
+}
+function closeRegOverlay(){
+	$('#sign-reg-overlay').fadeOut('slow', function(){
+		});
+}
 
+</script>
 
 
 <body>
