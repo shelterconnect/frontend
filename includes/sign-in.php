@@ -1,4 +1,4 @@
-<a href="javascript: closeInOverlay();"><img src="http://www.betterthaneveryone.com/images/CreatingmorecomplexbuttonsinXAML_CFB4/image_5.png" style="width: 45px;
+<a href="javascript: closeInOverlay();"><img src="img/back.png" style="width: 45px;
 position: absolute;
 top: 10px;
 right: calc(90% - 35px);" /></a>
