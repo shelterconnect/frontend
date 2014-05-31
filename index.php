@@ -20,7 +20,7 @@
 
 <div class="contents">
     
-This is a test.
+This is a test.  Yes, why yes indeed it is.
 <div id="map" style="height: 200px; width: 500px;"></div>
 </div>
 
