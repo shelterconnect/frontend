@@ -12,6 +12,11 @@
 <LINK href="includes/main.css" rel="stylesheet" type="text/css">
 <title>Shelter Connect Home</title>
 </head>
+<div class="navtitle">
+    
+	Does this even work?
+    
+</div>
 <div class="navbar">
     
     <?php require_once("includes/navbar.php") ?>
