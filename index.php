@@ -12,9 +12,16 @@
 <LINK href="includes/main.css" rel="stylesheet" type="text/css">
 <title>Shelter Connect Home</title>
 </head>
+<div class="navbar">
+    
+    <?php require_once("includes/navbar.php") ?>
+    
+</div>
+
 <div class="contents">
 This is a test.
 </div>
+
 
 
 <body>
