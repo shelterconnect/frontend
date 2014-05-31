@@ -13,6 +13,11 @@
 <title>Shelter Connect Home</title>
 </head>
 
+<div id="sign-in-overlay"><?php include('sign/sign-in.php'); ?></div>
+<div id="sign-reg-overlay"><?php include('sign/sign-reg.php'); ?></div>
+<div id="sign-prof-overlay"><?php include('sign/sign-prof.php'); ?></div>
+
+
 <div class="navbar">
     
     <?php require_once("includes/navbar.php") ?>
