@@ -1,6 +1,47 @@
 body {
 	margin: 0px;
 }
+.formcontainer {
+    text-align: center;	
+}
+.formfield {
+	border:  0px solid #CCC;
+	width: calc(90% - 10px);
+	border-bottom: 1px solid;
+	border-radius: 3px;
+	background-color: transparent;
+	height: 50px;
+	padding: 5px;
+	font: 500 25px 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: main;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	/* ...and now for the proper property */
+  	transition:.5s;
+}
+.formbutton {
+	border: none;
+	width: 90%;
+	height: 50px;
+	color: white;
+	padding: 5px;
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-radius: 0px;
+	background-color: #FF4848;
+	font: 500 25px 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: main; cursor: pointer; cursor: hand;
+	line-height: 95%;
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+.formfield.blue-border {
+	border-bottom: 1px solid #3498db;
+}
 .navbar {
 	color: #34495e;
 	height: 40px;
