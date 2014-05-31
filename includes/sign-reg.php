@@ -3,7 +3,7 @@
 position: absolute;
 top: 10px;
 right: calc(90% - 35px);" /></a>
-<h1 style="text-align: center; margin-top: 60px;">BAKERS DOZEN</h1><br />
+<h1 style="text-align: center; margin-top: 60px;">REGISTER</h1><br />
 <br />
 <?php  
 echo "<div style='text-align: center; position: absolute; left: 0; right: 0;'>";

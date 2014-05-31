@@ -2,7 +2,7 @@
 position: absolute;
 top: 10px;
 right: calc(90% - 35px);" /></a>
-<h1 style="text-align: center; margin-top: 60px;">Sign In</h1><br />
+<h1 style="text-align: center; margin-top: 60px;">SIGN IN</h1><br />
 <br />
 
 
