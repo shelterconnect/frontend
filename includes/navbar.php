@@ -20,11 +20,10 @@
 }
 </style>
 
-This is the navbar
 
 <div class="navtitle">
     
-Navtitle    
+Navtitle			    
 </div>
 
 <div class="navlinks">
