@@ -1,12 +1,7 @@
 'use strict';
 
 angular.module('frontendApp')
-  .controller('LoginCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AuthformmapCtrl', function ($scope) {
     $scope.map = {
       center: {
         latitude: 39,
