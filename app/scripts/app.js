@@ -41,6 +41,10 @@ angular
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl',
       })
+      .when('/shelters', {
+        templateUrl: 'views/shelters.html',
+        controller: 'SheltersCtrl',
+      })
       .when('/shelters/:id', {
         templateUrl: 'views/shelter.html',
         controller: 'ShelterCtrl',
