@@ -21,11 +21,10 @@
       <div class="row">
         <div class="medium-12 columns"
           ng-class="{error: register.type.$dirty && register.type.$invalid}">
-          <label>Account type <small>Required</small></label>
-          <select name="type" ng-model="user.type" required>
-            <option value="1">Group/Church</option>
-            <option value="2">Restaurant</option>
-            <option value="3">Shelter</option>
+          <label>Account Type <small>Required</small></label>
+          <select name="type" ng-model="user.type"
+            ng-options="types.indexOf(type)+1 as type for type in types"
+            required>
           </select>
           <div ng-show="register.type.$dirty && register.type.$invalid">
           </div>
