@@ -12,7 +12,7 @@
           ng-class="{error: register.name.$dirty && register.name.$invalid}">
           <label>Group or Shelter Name <small>Required</small></label>
           <input type="text" name="name" ng-model="user.name" required
-            placeholder="The Fellowship of the Ring" />
+            placeholder="Los Angeles Youth Network" />
           <div ng-show="register.name.$dirty && register.name.$invalid">
             <small class="error" ng-show="register.name.$error.required">
               You must provide a name.
@@ -37,7 +37,7 @@
           ng-class="{error: register.email.$dirty && register.email.$invalid}">
           <label>Email <small>Required</small></label>
           <input type="email" name="email" ng-model="user.email" required
-            placeholder="zaphod@beeblebrox.com" />
+            placeholder="contact@sheltername.com" />
           <div ng-show="register.email.$dirty && register.email.$invalid">
             <small class="error" ng-show="register.email.$error.required">
               You must provide an email.
@@ -53,7 +53,7 @@
           ng-class="{error: register.password.$dirty && register.password.$invalid}">
           <label>Password <small>Required</small></label>
           <input type="password" name="password" ng-model="user.password"
-            ng-minlength="6" required placeholder="Betelgeuse123" />
+            ng-minlength="6" required placeholder="password" />
           <div ng-show="register.password.$dirty && register.password.$invalid">
             <small class="error" ng-show="register.password.$error.required">
               You must provide a password.
@@ -69,7 +69,7 @@
           ng-class="{error: register.address.$dirty && register.address.$invalid}">
           <label>Address <small>Required</small></label>
           <input type="text" name="address" ng-model="user.address" required
-            placeholder="224 Space St. New Colony, Mars" />
+            placeholder="1 Infinite Loop, Cupertino, CA" />
           <div ng-show="register.address.$dirty && register.address.$invalid">
             <small class="error" ng-show="register.address.$error.required">
               You must provide an address.
@@ -82,7 +82,7 @@
           ng-class="{error: register.description.$dirty && register.description.$invalid}">
           <label>Description <small>Required</small></label>
           <textarea type="text" name="description" ng-model="user.description" required
-            placeholder="Some deets" ></textarea>
+            placeholder="Include your organization's offerings and needs in your description. Example: We're a nonprofit homeless shelter that caters exclusively to familes. We hold weekly dinners and need donations from restaurants and help from volunteer organizations." ></textarea>
           <div ng-show="register.description.$dirty && register.description.$invalid">
             <small class="error" ng-show="register.description.$error.required">
               You must provide an description.
