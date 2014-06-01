@@ -6,6 +6,13 @@ var apiBase = 'https://shelterconnect.ngrok.com';
 apiBase = 'http://localhost:3000';
 // @endif
 
+var userRoles = {
+  public: undefined,
+  shelter: 1,
+  restaurant: 2,
+  church: 3
+};
+
 angular
   .module('frontendApp', [
     'ngCookies',
@@ -16,14 +23,18 @@ angular
     'google-maps'
   ])
   .config(function ($routeProvider, $locationProvider) {
+    var access = userRoles;
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        access: access.public
       })
       .when('/login', {
         templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
+        controller: 'LoginCtrl',
+        access: access.public
       })
       .otherwise({
         redirectTo: '/'
