@@ -20,14 +20,14 @@
       </div>
       <div class="row">
         <div class="medium-12 columns"
-          ng-class="{error: register.accttype.$dirty && register.accttype.$invalid}">
+          ng-class="{error: register.type.$dirty && register.type.$invalid}">
           <label>Account type <small>Required</small></label>
-          <select name="accttype" form="register">
+          <select name="type" ng-model="user.type" required>
             <option value="1">Group/Church</option>
             <option value="2">Restaurant</option>
             <option value="3">Shelter</option>
           </select>
-          <div ng-show="register.accttype.$dirty && register.accttype.$invalid">
+          <div ng-show="register.type.$dirty && register.type.$invalid">
           </div>
         </div>
       </div>
