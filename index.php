@@ -31,7 +31,7 @@
     
 </div>
     
-<div id="map" style="height: 500px; width: 100%; margin-top: 50px;"></div>
+<div id="map" style="height: 500px; width: 100%; margin-top: 50px; border-radius: 8px;"></div>
 </div>
 
 <?php include_once("includes/mapdisplay.php") ?>

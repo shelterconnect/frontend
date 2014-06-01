@@ -53,7 +53,7 @@ body {
 	line-height: 95%;
 }
 textarea:focus, input:focus{
-    outline: 0;
+	outline: 0;
 }
 .formfield.blue-border {
 	border-bottom: 1px solid #3498db;
@@ -95,15 +95,15 @@ h2 {
   text-decoration: none;
 }
 .btn2 {
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  background: #2ecc71;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+	-webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	background: #2ecc71;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
 }
 
 .btn2:hover {
