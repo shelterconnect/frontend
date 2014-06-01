@@ -37,10 +37,18 @@ body, html {
   }
 }
 
+.user-home-map {
+  .angular-google-map-container {
+    height: 200px; 
+    width: 200px; 
+  }
+}
+
 .shelter-map {
   .angular-google-map-container {
     height: 200px; 
     width: 200px; 
+    z-index: 4549456;
   }
 }
 
