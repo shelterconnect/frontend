@@ -8,23 +8,38 @@ $white: white;
 $orange: #e67e22;
 $purple: #8e44ad;
 
+body, html {
+  height: 100%;
+  overflow: auto;
+
+  .off-canvas-wrap {
+    height: 100%;
+    overflow: auto;
+
+    .inner-wrap {
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}
 
 .main-map {
   .angular-google-map-container {
     height: 400px;
   }
 }
+
 .auth-map {
   .angular-google-map-container {
-    height: 500px;
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: -1;
   }
 }
-body, html {
 
-  height: 100%;
-  width: 100%;
-
-}
 .home-about-section {
 	
   color: $white;
