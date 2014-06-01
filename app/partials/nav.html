@@ -1,11 +1,18 @@
 <div ng-controller="NavCtrl">
   <li ng-class="{ active: isActive('/') }"><a href="/">Home</a></li>
-  <li ng-class="{ active: isActive('/login') }">
-    <a href="/#/login">Login</a>
-  </li>
-  <li ng-class="{ active: isActive('/register') }">
-    <a href="/#/register">Register</a>
-  </li>
+  <span ng-if="loggedIn()">
+    <li>
+      <a ng-click="logout()">Logout</a>
+    </li>
+  </span>
+  <span ng-if="!loggedIn()">
+    <li ng-class="{ active: isActive('/login') }">
+      <a href="/#/login">Login</a>
+    </li>
+    <li ng-class="{ active: isActive('/register') }">
+      <a href="/#/register">Register</a>
+    </li>
+  </span>
   <li ng-class="{ active: isActive('/contact') }">
     <a href="/#/contact">Contact</a>
   </li>

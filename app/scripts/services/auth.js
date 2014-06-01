@@ -4,19 +4,18 @@ var apiBase, userRoles;
 
 angular.module('frontendApp')
   .factory('Auth', function ($rootScope, $cookieStore, $http) {
-    var currentUser = $cookieStore.get('user') ||
-      { email: '', type: userRoles.public };
+    var token = $cookieStore.get('token');
 
     return {
-      isLoggedIn: function (user) {
-        if (user === undefined) {
-          user = $rootScope.user;
-        }
+      //isLoggedIn: function (user) {
+        //if (user === undefined) {
+          //user = $rootScope.user;
+        //}
 
-        return user.type === userRoles.shelter ||
-          user.type === userRoles.restaurant ||
-          user.type === userRoles.church;
-      },
+        //return user.type === userRoles.shelter ||
+          //user.type === userRoles.restaurant ||
+          //user.type === userRoles.church;
+      //},
 
       register: function (user, success, error) {
         $http.post(apiBase + '/organizations', user).success(success).
@@ -26,19 +25,21 @@ angular.module('frontendApp')
       login: function (user, success, error) {
         $http.post(apiBase + '/organizations/authenticate', user).
           success(function (data) {
-            $rootScope.token = data.token;
+            token = data.token;
+            $cookieStore.put('token', data.token);
             success(data);
           }).error(error);
       },
 
       logout: function () {
-        $rootScope.user = {
-          email: '',
-          type: userRoles.public
-        };
+        token = null;
+        $cookieStore.remove('token');
       },
 
       userRoles: userRoles,
-      user: currentUser
+      token: token,
+      loggedIn: function () {
+        return token !== null && token !== undefined;
+      }
     };
   });
