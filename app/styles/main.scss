@@ -9,10 +9,22 @@ $orange: #e67e22;
 $purple: #8e44ad;
 
 
-.angular-google-map-container {
-  height: 400px;
+.main-map {
+  .angular-google-map-container {
+    height: 400px;
+  }
 }
+.auth-map {
+  .angular-google-map-container {
+    height: 500px;
+  }
+}
+body, html {
 
+  height: 100%;
+  width: 100%;
+
+}
 .home-about-section {
 	
   color: $white;
@@ -55,5 +67,10 @@ $purple: #8e44ad;
 #purplebutton {
 
   background-color: $purple;
+
+}
+.auth-form {
+
+  margin-top: 20px;
 
 }
