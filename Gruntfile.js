@@ -159,6 +159,25 @@ module.exports = function (grunt) {
       }
     },
 
+    // Process @ifdefs and friends.
+    preprocess : {
+      options: {
+        inline: true,
+        context : {
+          DEBUG: false
+        }
+      },
+      html : {
+        src : [
+          '<%= yeoman.dist %>/index.html',
+          '<%= yeoman.dist %>/views/*.html'
+        ]
+      },
+      js : {
+        src: '.tmp/concat/scripts/*.js'
+      }
+    },
+
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
