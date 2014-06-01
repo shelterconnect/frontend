@@ -4,10 +4,10 @@ angular.module('frontendApp')
   .controller('MainCtrl', function ($scope, Organization, Auth) {
     $scope.map = {
       center: {
-        latitude: 39,
-        longitude: -101
+        latitude: 33.9587073,
+        longitude: -118.2634171 
       },
-      zoom: 4,
+      zoom: 10,
       orgs: Organization.query()
     };
 
