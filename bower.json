@@ -13,7 +13,8 @@
     "angular-foundation": "~0.2.2",
     "underscore": "~1.6.0",
     "angular-google-maps": "~1.1.0",
-    "ngGeolocation": "~0.0.4"
+    "ngGeolocation": "~0.0.4",
+    "Hover.css": "git://github.com/zachlatta/Hover"
   },
   "devDependencies": {
     "angular-mocks": "1.2.15",

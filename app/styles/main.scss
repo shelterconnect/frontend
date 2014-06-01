@@ -1,6 +1,7 @@
 // bower:scss
 // endbower
 
+@import "effects";
 @import "foundation/components/global";
 
 $red: #e74c3c;
@@ -128,7 +129,7 @@ body, html {
     background-color: #fff;
     color: scale-color($green, $lightness: -10%);
     font-size: rem-calc(20);
-    font-weight: bold;
+    font-weight: normal;
 
     @media #{$medium-up} {
       font-size: rem-calc(24);
