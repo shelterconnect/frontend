@@ -20,7 +20,8 @@ angular
     'ngSanitize',
     'ngRoute',
     'mm.foundation',
-    'google-maps'
+    'google-maps',
+    'ngGeolocation'
   ])
   .config(function ($routeProvider, $locationProvider) {
     var access = userRoles;
