@@ -10,9 +10,9 @@ angular.module('frontendApp')
       'Volunteer Group'
     ];
     $scope.submit = function () {
-      Auth.register($scope.user, function (data) {
+      Auth.register($scope.user, function () {
         $scope.message = 'Account created successfully.';
-      }, function (data) {
+      }, function () {
         $scope.message = 'Error creating account.';
       });
     };

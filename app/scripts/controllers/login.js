@@ -5,9 +5,9 @@ angular.module('frontendApp')
     $scope.user = { email: '', password: '' };
     $scope.message = '';
     $scope.submit = function () {
-      Auth.login($scope.user, function (data) {
+      Auth.login($scope.user, function () {
         $scope.message = 'Login successful!';
-      }, function (data) {
+      }, function () {
         $scope.message = 'Invalid email or password.';
       });
     };
