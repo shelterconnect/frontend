@@ -1,8 +1,11 @@
 // bower:scss
 // endbower
 
+@import "foundation/components/global";
+
 $red: #e74c3c;
 $blue: #2980b9;
+$wet-asphalt: #34495e;
 $green: #27ae60;
 $white: white;
 $orange: #e67e22;
@@ -61,35 +64,82 @@ body, html {
 
 }
 
+.home-landing-section {
+  background-color: $wet-asphalt;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  h1 {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
 .home-about-section {
 	
   color: $white;
-  font-size: 18px;
   text-align: center;
   padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: $blue;
 
+  h1 {
+    font-weight: bold;
+    font-size: 64px;
+    color: $white;
+  }
+
+  h3 {
+    font-weight: bold;
+    color: $white;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
 .home-about-icons {
 
-  max-width: 70px;
+  width: 150px;
   margin-top: 15px;
 
 }
 
 .home-join-section {
-	
-  color: $white;
-  font-size: 18px;
   text-align: center;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: $green;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
+  h1 {
+    color: $white;
+    font-size: rem-calc(48);
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    @media #{$medium-up} {
+      font-size: rem-calc(64);
+    }
+  }
+
+  .button {
+    background-color: #fff;
+    color: scale-color($green, $lightness: -10%);
+    font-size: rem-calc(20);
+    font-weight: bold;
+
+    @media #{$medium-up} {
+      font-size: rem-calc(24);
+    }
+  }
+
+  .outline-outward:before {
+    border-color: #fff;
+  }
 }
+
 #orangebutton {
 
   background-color: $orange;
