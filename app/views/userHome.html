@@ -1,6 +1,12 @@
 <div class="row">
-  <h1>{{me.name}}</h1>
+  <div class="home-about-section">
+    <h1>{{me.name}}</h1>
+    <h4>{{me.address}}</h4>
 
-  <h4>Description</h4>
-  <p>{{me.description}}</p>
+    <h4>Description:</h4>
+    <p>{{me.description}}</p>
+
+    <google-map style="width: 200px; height: 150px; border-radius: 8px !important;" center="me.location" zoom="map.zoom" draggable="false" options="{disableDefaultUI: true, scrollwheel: false}" class="auth-map" ></google-map></div> 
+
+  </div>
 </div>
