@@ -81,7 +81,7 @@
         <div class="medium-12 columns"
           ng-class="{error: register.description.$dirty && register.description.$invalid}">
           <label>Description <small>Required</small></label>
-          <textarea type="text" name="description" ng-model="user.description" required
+          <textarea type="text" name="description" ng-model="user.description" rows=6 required
             placeholder="Include your organization's offerings and needs in your description. Example: We're a nonprofit homeless shelter that caters exclusively to familes. We hold weekly dinners and need donations from restaurants and help from volunteer organizations." ></textarea>
           <div ng-show="register.description.$dirty && register.description.$invalid">
             <small class="error" ng-show="register.description.$error.required">
