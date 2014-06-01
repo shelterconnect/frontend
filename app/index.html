@@ -14,8 +14,8 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
-    <link rel="stylesheet" href="styles/foundation_and_overrides.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles/foundation_and_overrides.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
   </head>
   <body ng-app="frontendApp">
@@ -34,7 +34,7 @@
           </ul>
           <section class="top-bar-section">
             <ul class="right">
-              <ng-include src="'partials/nav.html'">
+              <ng-include src="'/partials/nav.html'">
             </ul>
           </section>
         </nav>
@@ -49,7 +49,7 @@
         <aside class="left-off-canvas-menu">
           <ul class="off-canvas-list">
             <li><label>Navigation</label></li>
-            <ng-include src="'partials/nav.html'"></ng-include>
+            <ng-include src="'/partials/nav.html'"></ng-include>
           </ul>
         </aside>
         <div ng-view autoscroll></div>
@@ -101,6 +101,7 @@
         <script src="scripts/controllers/authFormMap.js"></script>
         <script src="scripts/services/auth.js"></script>
         <script src="scripts/services/organization.js"></script>
+        <script src="scripts/controllers/shelter.js"></script>
         <!-- endbuild -->
 </body>
 </html>

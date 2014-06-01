@@ -41,6 +41,10 @@ angular
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl',
       })
+      .when('/shelters/:id', {
+        templateUrl: 'views/shelter.html',
+        controller: 'ShelterCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });
