@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('frontendApp')
-  .controller('LoginCtrl', function ($scope, Auth) {
+  .controller('LoginCtrl', function ($scope, $location, Auth) {
     $scope.map = {
       center: {
         latitude: 39,
@@ -15,6 +15,8 @@ angular.module('frontendApp')
     $scope.submit = function () {
       Auth.login($scope.user, function () {
         $scope.message = 'Login successful!';
+        $location.path('/');
+        $location.path('/');
       }, function () {
         $scope.message = 'Invalid email or password.';
       });

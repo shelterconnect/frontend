@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('frontendApp')
-  .controller('RegisterCtrl', function ($scope, Auth) {
+  .controller('RegisterCtrl', function ($scope, $location, Auth) {
     $scope.map = {
       center: {
         latitude: 39,
@@ -20,6 +20,7 @@ angular.module('frontendApp')
     $scope.submit = function () {
       Auth.register($scope.user, function () {
         $scope.message = 'Account created successfully.';
+        $location.path('/login');
       }, function () {
         $scope.message = 'Error creating account.';
       });

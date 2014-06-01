@@ -7,16 +7,6 @@ angular.module('frontendApp')
     var token = $cookieStore.get('token');
 
     return {
-      //isLoggedIn: function (user) {
-        //if (user === undefined) {
-          //user = $rootScope.user;
-        //}
-
-        //return user.type === userRoles.shelter ||
-          //user.type === userRoles.restaurant ||
-          //user.type === userRoles.church;
-      //},
-
       register: function (user, success, error) {
         $http.post(apiBase + '/organizations', user).success(success).
           error(error);

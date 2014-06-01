@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('frontendApp')
-  .controller('MainCtrl', function ($scope, Organization) {
+  .controller('MainCtrl', function ($scope, Organization, Auth) {
     $scope.map = {
       center: {
         latitude: 39,
@@ -10,4 +10,6 @@ angular.module('frontendApp')
       zoom: 4,
       orgs: Organization.query()
     };
+
+    $scope.loggedIn = Auth.loggedIn;
   });

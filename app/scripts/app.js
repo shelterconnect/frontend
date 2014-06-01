@@ -23,7 +23,7 @@ angular
     'google-maps',
     'ngGeolocation'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $httpProvider) {
     var access = userRoles;
 
     $routeProvider
@@ -52,4 +52,6 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
+    $httpProvider.interceptors.push('authInterceptor');
   });
