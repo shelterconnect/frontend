@@ -7,14 +7,26 @@
 
 }
 window.onload = loadScript;
+
+function load()
+{
+//alert("word")	
+if (navigator.geolocation)
+   {
+   navigator.geolocation.getCurrentPosition(showPos);
+   }
+}   
     
     //<![CDATA[
 var map;
     var customIcon = "img/map_marker_icon.png"
 
-    function load() {
+    function showPos(position) {
+	//	alert(position)
+	//	alert(position.coords.latitude)
       map = new google.maps.Map(document.getElementById("map"), {
-        center: new google.maps.LatLng(33.963654, -118.408401),
+          center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+//          center: new google.maps.LatLng(33.963654, -118.408401),
         zoom: 11,
         mapTypeId: 'roadmap',
 		panControl: false,
