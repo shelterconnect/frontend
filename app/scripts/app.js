@@ -23,7 +23,7 @@ angular
     'google-maps',
     'ngGeolocation'
   ])
-  .config(function ($routeProvider, $locationProvider) {
+  .config(function ($routeProvider) {
     var access = userRoles;
 
     $routeProvider
@@ -44,6 +44,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-
-    $locationProvider.html5Mode(true);
   });
