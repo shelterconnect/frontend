@@ -134,6 +134,25 @@ body, html {
   }
 }
 
+.shelters-heading {
+  background-color: $green;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 30px;
+
+  h1 {
+    color: $white;
+    font-weight: bold;
+    font-size: 64px;
+  }
+
+  p {
+    color: $white;
+    font-size: 24px;
+  }
+}
+
 #orangebutton {
 
   background-color: $orange;
