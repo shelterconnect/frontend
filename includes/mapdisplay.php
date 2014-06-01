@@ -7,6 +7,15 @@ function loadScript() {
 }
 
 window.onload = loadScript;
+
+function load()
+{
+//alert("word")	
+if (navigator.geolocation)
+   {
+   navigator.geolocation.getCurrentPosition(showPos);
+   }
+}   
     
 function load() {
   if (navigator.geolocation) {

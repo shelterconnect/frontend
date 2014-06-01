@@ -1,6 +1,22 @@
 body {
 	margin: 0px;
 }
+.navbar {
+	color: #34495e;
+	height: 40px;
+	float: left;
+	margin-bottom: 8px;
+	width: 100%;
+}
+.navtitle{
+	margin: 0px;
+	float: left;
+}
+
+.navlinks {
+	margin-top: 9px;
+	float: right;
+}
 .formcontainer {
     text-align: center;	
 }
@@ -41,22 +57,6 @@ textarea:focus, input:focus{
 }
 .formfield.blue-border {
 	border-bottom: 1px solid #3498db;
-}
-.navbar {
-	color: #34495e;
-	height: 40px;
-	float: left;
-	margin-bottom: 8px;
-	width: 100%;
-}
-.navtitle{
-	margin: 0px;
-	float: left;
-}
-
-.navlinks {
-	margin-top: 9px;
-	float: right;
 }
 .contents {
 	max-width: 700px;
