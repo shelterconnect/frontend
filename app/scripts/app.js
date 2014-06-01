@@ -36,6 +36,9 @@ angular
         controller: 'LoginCtrl',
         access: access.public
       })
+      .when('/register', {
+        templateUrl: 'views/register.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

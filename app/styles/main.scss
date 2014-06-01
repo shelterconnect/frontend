@@ -3,7 +3,11 @@
 
 $red: #e74c3c;
 $blue: #2980b9;
+$green: #27ae60;
 $white: white;
+$orange: #e67e22;
+$purple: #8e44ad;
+
 
 .angular-google-map-container {
   height: 400px;
@@ -20,6 +24,12 @@ $white: white;
   background-color: $blue;
 
 }
+.home-about-icons {
+
+  max-width: 70px;
+  margin-top: 15px;
+
+}
 
 .home-join-section {
 	
@@ -29,6 +39,21 @@ $white: white;
   padding: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: $green;
+
+}
+#orangebutton {
+
+  background-color: $orange;
+
+}
+#redbutton {
+
   background-color: $red;
+
+}
+#purplebutton {
+
+  background-color: $purple;
 
 }
