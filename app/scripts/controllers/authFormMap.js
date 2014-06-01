@@ -4,9 +4,9 @@ angular.module('frontendApp')
   .controller('AuthFormMapCtrl', function ($scope) {
     $scope.map = {
       center: {
-        latitude: 39,
-        longitude: -101
+        latitude: 34.0141392,
+        longitude: -118.2866044
       },
-      zoom: 4
+      zoom: 12
     };
   });
