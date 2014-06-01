@@ -8,7 +8,6 @@ right: calc(90% - 35px);" /></a>
 
 <?php  
 echo "<div style='text-align: center; position: absolute; left: 0; right: 0;'>";
-echo $error;
 echo "</div>";
 
 echo '<br />';
