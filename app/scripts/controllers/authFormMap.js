@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('frontendApp')
-  .controller('AuthformmapCtrl', function ($scope) {
+  .controller('AuthFormMapCtrl', function ($scope) {
     $scope.map = {
       center: {
         latitude: 39,
