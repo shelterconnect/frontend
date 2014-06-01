@@ -3,7 +3,7 @@
 var apiBase = 'https://shelterconnect.ngrok.com';
 
 // @if DEBUG
-apiBase = 'http://localhost:3000';
+apiBase = 'https://shelterconnect.ngrok.com';
 // @endif
 
 var userRoles = {
