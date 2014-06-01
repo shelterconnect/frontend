@@ -1,6 +1,9 @@
 <div ng-controller="NavCtrl">
   <li ng-class="{ active: isActive('/') }"><a href="/">Home</a></li>
   <span ng-if="loggedIn()">
+    <li ng-class="{ active: isActive('/shelters') }">
+      <a href="/#/shelters">Shelters</a>
+    </li>
     <li>
       <a ng-click="logout()">Logout</a>
     </li>
